@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rest JSON</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/requisicao.js" ></script>
+
+</head>
+<body style="width:80%; margin: auto;">
+<h1 style="text-align: center;">RestApi IMC</h1>
+<hr/>
+<div class="interface" 	>
+	
+	<div class="form">
+	
+		<label for="peso">Peso:</label> 
+		<input class="form-control" type="number" id="peso" placeholder="Informe seu peso" /> 
+		<label for="altura" >Altura:</label>
+		<input class="form-control" type="number" id="altura" placeholder="Informe sua alura" /> 
+		<label for="sexo">Sexo:</label>
+		<select class="form-control" name="sexo" id="sexo" >
+			<option value="masculino">Masculino</option>
+			<option value="feminino">Feminino</option>
+		</select>
+
+		<hr>
+		<button id="button" class="form-control btn btn-success" onclick="calcular()">Calcular IMC</button> 
+	
+		<hr>
+
+		<div class="alert alert-success" role="alert"style="margin-top: 45px">
+			<div>
+				<p id="idPeso"><b></b> </p>
+				<p id="div"><b></b> </p> 
+				<p id="situacao"><b></b> </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br/>
+
+<footer style="text-align: center; box-shadow: 0px 0px 2px blue; background-color: rgba(0,0,0,.2)">
+	<h3>Desenvolvido por Jones Quito</h3>
+</footer>
+
+</body>
+</html>
