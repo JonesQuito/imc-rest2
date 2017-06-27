@@ -9,7 +9,7 @@ $("#button").click(function(){
 	    async: false,
 	    dataType: 'json',
 	    success: function(data) {
-	       $("#div").html("<b>Imc: </b>" + data.imc);
+	       $("#imc").html("<b>Imc: </b>" + data.imc);
 	       $("#situacao").html("<b>Situação:</b> " + data.situacao);
 	       $("#idPeso").html("<b>Peso(kg): </b>" + data.peso);
 	       
